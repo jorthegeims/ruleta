@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".popuprecompensa"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:paddingHorizontal="15dp"
+        android:background="@drawable/colordegradado">
+
+        <TextView
+            android:id="@+id/TM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="monedas"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:onClick="atras"
+            app:srcCompat="@drawable/flecha1" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.92">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="630dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="49dp"
+                android:orientation="vertical">
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/paypalbtn"
+                        android:layout_width="228dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="80dp"
+                        android:layout_marginRight="80dp"
+                        android:onClick="Circulop1"
+                        app:srcCompat="@drawable/dolar51" />
+
+                    <ImageView
+                        android:layout_width="228dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="80dp"
+                        android:layout_marginRight="80dp"
+                        android:onClick="Circulop1"
+                        app:srcCompat="@drawable/recortep2" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/paypalbtn2"
+                        android:layout_width="228dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="80dp"
+                        android:layout_marginRight="80dp"
+                        android:onClick="Circulop2"
+                        app:srcCompat="@drawable/dolar10" />
+
+                    <ImageView
+                        android:layout_width="228dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="80dp"
+                        android:layout_marginRight="80dp"
+                        android:onClick="Circulop2"
+                        app:srcCompat="@drawable/recortep2"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/paypalbtn3"
+                        android:layout_width="228dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="80dp"
+                        android:layout_marginRight="80dp"
+                        android:onClick="Circulop3"
+                        app:srcCompat="@drawable/dolar15" />
+
+                    <ImageView
+                        android:layout_width="228dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="80dp"
+                        android:layout_marginRight="80dp"
+                        android:onClick="Circulop3"
+                        app:srcCompat="@drawable/recortep2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/paypalbtn4"
+                        android:layout_width="228dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="80dp"
+                        android:layout_marginRight="80dp"
+                        android:onClick="Circulop4"
+                        app:srcCompat="@drawable/dolar20" />
+
+                    <ImageView
+                        android:layout_width="228dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="80dp"
+                        android:layout_marginRight="80dp"
+                        android:onClick="Circulop4"
+                        app:srcCompat="@drawable/recortep2" />
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

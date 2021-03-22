@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF7230"
+    tools:context=".rasca">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pergamino1">
+
+            <TextView
+                android:id="@+id/Nmonedas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="297dp"
+                android:layout_marginLeft="297dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginRight="54dp"
+                app:srcCompat="@drawable/monedas" />
+
+            <TextView
+                android:id="@+id/usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginEnd="342dp"
+                android:layout_marginRight="342dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="104dp"
+            android:layout_marginBottom="560dp"
+            android:background="#0000E2FF"
+            android:fontFamily="sans-serif-black"
+            android:text=" Rasca y gana "
+            android:textColor="#000000"
+            android:textSize="50dp" />
+
+
+        <TextView
+            android:id="@+id/Gana"
+            android:layout_width="240dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="#FF5722"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="0.1"
+            android:textColor="@color/white"
+            android:textSize="100dp" />
+
+        <in.myinnos.androidscratchcard.ScratchCard
+            android:id="@+id/scratchCard"
+            android:layout_width="240dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:scratchDrawable="@drawable/plata2" />
+
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:id="@+id/video"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:onClick="playvideo"
+            app:srcCompat="@raw/play" />
+
+        <TextView
+            android:id="@+id/playvideo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="#A8A8A8"
+            android:fontFamily="sans-serif-black"
+            android:text=" ve el video para jugar "
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="65dp"
+            android:onClick="ruleta"
+            android:padding="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="prueba otra vez"
+            android:textSize="30dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

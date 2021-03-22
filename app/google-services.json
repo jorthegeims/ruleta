@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "95058100009",
+    "firebase_url": "https://fir-ruleta-default-rtdb.firebaseio.com",
+    "project_id": "fir-ruleta",
+    "storage_bucket": "fir-ruleta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95058100009:android:c94f2d5bb34af33d3d8138",
+        "android_client_info": {
+          "package_name": "app.casino.ruleta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95058100009-fk7nssaf0eku8cpp4rr960go9hdm9kl0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.casino.ruleta",
+            "certificate_hash": "6c01a8c2d4cce475b1ec4af4ed45b5855e6e28f4"
+          }
+        },
+        {
+          "client_id": "95058100009-0gu5hku48dbpspdbnhadmevrshhia1ao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWTD78DNd6UYLSQSPISc1id15fwiBYJf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95058100009-0gu5hku48dbpspdbnhadmevrshhia1ao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

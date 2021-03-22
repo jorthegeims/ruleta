@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondocielo2"
+    tools:context=".registro"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/login"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
+                app:lottie_loop="true"
+                app:lottie_speed="0.75"
+                app:srcCompat="@raw/login" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="Inicia con google"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40dp" />
+
+
+
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/iniciar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"/>
+
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
