@@ -2,10 +2,8 @@ package app.casino.ruleta;
 
 import android.os.StrictMode;
 import android.util.Log;
-
 import java.util.Date;
 import java.util.Properties;
-
 import javax.activation.CommandMap;
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
@@ -135,8 +133,6 @@ public class Mail extends javax.mail.Authenticator {
         DataSource source = new FileDataSource(filename);
         messageBodyPart.setDataHandler(new DataHandler(source));
         messageBodyPart.setFileName(filename);
-
-        //_multipart.addBodyPart(messageBodyPart);
     }
 
     @Override
@@ -180,6 +176,4 @@ public class Mail extends javax.mail.Authenticator {
         this._to = toArr;
 
     }
-
-    // more of the getters and setters …..
 }

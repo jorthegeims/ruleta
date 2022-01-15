@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "95058100009-fk7nssaf0eku8cpp4rr960go9hdm9kl0.apps.googleusercontent.com",
+          "client_id": "95058100009-gh07vldqqq0ad597uikqfkl8pa4jp0s8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "app.casino.ruleta",
-            "certificate_hash": "6c01a8c2d4cce475b1ec4af4ed45b5855e6e28f4"
+            "certificate_hash": "2a82025cce0d2f2c55fca1a5398c24859ee411e2"
           }
         },
         {

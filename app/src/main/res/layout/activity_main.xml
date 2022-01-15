@@ -51,7 +51,7 @@
             android:layout_toEndOf="@+id/usuario"
             android:layout_toRightOf="@+id/usuario"
             android:onClick="Cerrar"
-            app:srcCompat="@drawable/cerrar" />
+            android:src="@drawable/cerrar" />
 
 
         <ImageView
@@ -241,7 +241,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             app:adSize="BANNER"
-            app:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+            app:adUnitId="ca-app-pub-5014261020839028/6105180409" />
 
     </RelativeLayout>
 

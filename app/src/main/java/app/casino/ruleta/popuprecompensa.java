@@ -1,96 +1,35 @@
 package app.casino.ruleta;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.airbnb.lottie.LottieAnimationView;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import java.util.TimeZone;
-
-import app.casino.ruleta.model.Persona;
+import app.casino.ruleta.model.actualizarMonedas;
 
 public class popuprecompensa extends AppCompatActivity {
 
-
-
-    private TextView Nmonedas;
-
-    private Intent intent;
-    int fecha2;
-    SharedPreferences sharedPreferences;
-    private String SHARED_PREF_NAME = "mypref";
-    SharedPreferences preferences;
-    private String fecha = "fecha";
-    private FirebaseDatabase firebaseDatabase;
-    private DatabaseReference databaseReference;
-
-    SharedPreferences preferencesU;
-    private String usuario = "usuario";
-    private boolean on = false;
-
     private float monedas;
-
-
+    TextView nmonedas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_popuprecompensa);
 
-        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        preferences = getSharedPreferences(fecha, Context.MODE_PRIVATE);
-        preferencesU = getSharedPreferences(usuario, Context.MODE_PRIVATE);
-        Nmonedas = findViewById(R.id.TM);
-        inicializarFirebase();
-        databaseReference.child("Persona").child(preferencesU.getString(usuario, "gabriel"))
-                .addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+        nmonedas = findViewById(R.id.TM);
 
+        actualizarMonedas.readUser(this, nmonedas);
 
-                            //Log.i("douuuu", String.valueOf(finalValor));
-                            Persona pipol1 = snapshot.getValue(Persona.class);
-
-                            monedas = pipol1.getMonedas();
-
-                            Nmonedas.setText(pipol1.getMonedas() + " coins");
-
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-
-
-
-
-        intent = new Intent(Intent.ACTION_VIEW);
-
+        Log.i("valores", (String) nmonedas.getText());
 
     }
 
     public void Circulop1 (View view) {
-
+        monedas = Float.parseFloat((String) nmonedas.getText());
         if (monedas > 2700) {
-
 
             Intent intent1 = new Intent(popuprecompensa.this, paypalA.class);
             intent1.putExtra("monedas", monedas);
@@ -98,13 +37,11 @@ public class popuprecompensa extends AppCompatActivity {
             intent1.putExtra("resta", 2700);
             startActivity(intent1);
 
-
         }
-
     }
 
         public void Circulop2 (View view){
-
+            monedas = Float.parseFloat((String) nmonedas.getText());
             if (monedas> 5200) {
 
 
@@ -118,7 +55,7 @@ public class popuprecompensa extends AppCompatActivity {
     }
 
     public void Circulop3 (View view){
-
+        monedas = Float.parseFloat((String) nmonedas.getText());
         if (monedas> 7700) {
 
 
@@ -135,7 +72,6 @@ public class popuprecompensa extends AppCompatActivity {
 
         if (monedas> 10200) {
 
-
             Intent intent1 = new Intent(popuprecompensa.this, paypalA.class);
             intent1.putExtra("monedas", monedas);
             intent1.putExtra("dinero",20);
@@ -145,18 +81,8 @@ public class popuprecompensa extends AppCompatActivity {
         }
     }
 
-
-
-    private void inicializarFirebase() {
-
-        FirebaseApp.initializeApp(this);
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference();
-    }
-
-
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == event.KEYCODE_BACK) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
 
             Intent intent = new Intent(popuprecompensa.this, MainActivity.class);
 
@@ -173,7 +99,4 @@ public class popuprecompensa extends AppCompatActivity {
         startActivity(intent);
 
     }
-
-
-
 }
